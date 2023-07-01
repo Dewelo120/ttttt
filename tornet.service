@@ -6,7 +6,7 @@ Wants=network-online.target
 [Service]
 Type=simple
 User=root
-WorkingDirectory=NebulaC2-main/src/Payload
+WorkingDirectory=/root/NebulaC2/src/Payload/
 ExecStart=/bin/python3 bot.py
 Restart=always
 RestartSec=10
