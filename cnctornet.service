@@ -1,0 +1,16 @@
+[Unit]
+
+Description=TorNET
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/NebulaC2
+ExecStart=/bin/python3 main.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
